@@ -2,7 +2,6 @@ package no.kristiania.jdbc;
 
 import org.h2.jdbcx.JdbcDataSource;
 import org.junit.jupiter.api.Test;
-
 import java.sql.SQLException;
 import java.util.Random;
 
@@ -25,6 +24,7 @@ public class WebshopTest {
     }
 
     private String pickOne(String[] strings) {
+        
         return strings[new Random().nextInt(strings.length)];
     }
 }
